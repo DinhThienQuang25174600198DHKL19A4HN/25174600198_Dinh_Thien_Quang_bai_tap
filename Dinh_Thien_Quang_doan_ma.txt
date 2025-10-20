@@ -1,0 +1,98 @@
+# --- Bài 1 ---
+git clone https://https://github.com/DinhThienQuang25174600198DHKL19A4HN/25174600198_Dinh_Thien_Quang_bai_tap
+# --- Bài 2 ---
+# (Chỉnh sửa file readme.md bằng tay)
+git add readme.md
+git commit -m "Cập nhật readme.md theo Bài 2"
+git push origin main
+
+# --- Bài 3 ---
+git checkout main
+git pull
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Thêm file cho branch 1"
+git push origin branch_1
+
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Thêm file cho branch 2"
+git push origin branch_2
+
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Thêm file cho branch 3"
+git push origin branch_3
+
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add text_branch_4.txt
+git commit -m "Thêm file cho branch 4"
+git push origin branch_4
+
+# --- Bài 4 ---
+git checkout main
+git branch -delete branch_4
+git branch -list
+git branch -r
+
+# --- Bài 5 ---
+git checkout main
+git pull
+
+# --- Bài 6 ---
+git checkout main
+mkdir main_folder
+touch main_folder/main_txt_1.txt main_folder/main_txt_2.txt main_folder/main_txt_3.txt
+git add main_folder
+git commit -m "Thêm main_folder và các tệp tin"
+git push origin main
+
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+git checkout branch_2
+git pull origin main
+git push origin branch_2
+
+git checkout branch_3
+git pull origin main
+git push origin branch_3
+
+# --- Bài 7 ---
+git checkout branch_1
+git checkout -b branch_5
+# (Chỉnh sửa file text_branch_1.txt bằng tay)
+git add text_branch_1.txt
+git commit -m "Cập nhật nội dung text_branch_1.txt trong branch_5"
+git push origin branch_5
+# (Thao tác Pull Request và Merge trên GitHub)
+
+# --- Bài 8 ---
+# (Thao tác Pull Request và Merge 4 nhánh vào main trên GitHub)
+
+# --- Bài 9 ---
+git checkout main
+git pull
+git branch -d branch_2
+git branch -d branch_3
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+# --- Bài 10 ---
+# (Tạo file <Dinh THien Quang>_doan_ma.txt và copy các lệnh trên vào)
+git add <Dinh Thien Quang>_doan_ma.txt
+git commit -m "Nộp file tổng hợp mã lệnh"
+git push origin main
